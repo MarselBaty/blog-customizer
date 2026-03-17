@@ -28,5 +28,6 @@
 		}
 	},
 	"outDir": "./dist/",
-	"include": ["src/**/*"]
+	"include": ["src/**/*"],
+	"exclude": ["src/**/*.stories.tsx", "src/ui/story-decorator/*.tsx"]
 }
