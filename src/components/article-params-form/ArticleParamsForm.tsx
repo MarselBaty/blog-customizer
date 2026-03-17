@@ -15,6 +15,7 @@ import {
 	backgroundColors,
 	contentWidthArr,
 	ArticleStateType,
+	OptionType,
 } from 'src/constants/articleProps';
 
 import styles from './ArticleParamsForm.module.scss';
@@ -38,7 +39,7 @@ export const ArticleParamsForm = ({ articleState, setArticleState }: ArticlePara
 
 	const toggleOpen = () => setIsOpen(!isOpen);
 
-	const handleChange = (field: keyof ArticleStateType) => (value: any) => {
+	const handleChange = (field: keyof ArticleStateType) => (value: OptionType) => {
 		setFormState((prev: ArticleStateType) => ({ ...prev, [field]: value }));
 	};
 
